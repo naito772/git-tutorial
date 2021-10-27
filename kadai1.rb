@@ -11,6 +11,9 @@ while (i <= 100) do
 
     elsif (i % 5 == 0)
       puts("Buzz")
+
+    elsif (i % 7 == 0)
+      puts("Git")
     
     #いずれでもなければ値を返す
     else 
