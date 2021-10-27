@@ -1,20 +1,23 @@
-i=1
+#変数の初期化
+i = 1
 
-while (i<=100) do
-  if (i % 3 == 0 && i % 5 == 0)
-    printf("FizzBuzz\n");
-  
-  elsif (i % 3 == 0)
-    puts("Fizz");
-  
-  elsif (i % 5 == 0) 
-    puts("Buzz");
-  
-  else {
-    puts("%d", i);
-  
-  end
+#1から100までFizzBuzz
+while (i <= 100) do
+    if (i % 3 == 0 && i % 5 == 0)
+      puts("FizzBuzz")
 
-  i = i + 1
+    elsif (i % 3 == 0)
+      puts("Fizz")
+
+    elsif (i % 5 == 0)
+      puts("Buzz")
+    
+    #いずれでもなければ値を返す
+    else 
+      puts("#{i}")
+    
+    end
+
+  i = i + 1 
 
 end
